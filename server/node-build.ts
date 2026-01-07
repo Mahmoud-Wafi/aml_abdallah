@@ -7,7 +7,8 @@ const port = process.env.PORT || 3000;
 
 // In production, serve the built SPA files
 const __dirname = import.meta.dirname;
-const distPath = path.join(__dirname, "../spa");
+// Handle both local and serverless environments
+const distPath = path.join(__dirname, "..", "spa");
 
 // Serve static files
 app.use(express.static(distPath));

@@ -3,5 +3,15 @@
   "framework": "vite",
   "env": {
     "NODE_ENV": "production"
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/dist/server/production.mjs"
+    },
+    {
+      "src": "/(?!api)",
+      "dest": "/dist/server/production.mjs"
+    }
+  ]
 }
