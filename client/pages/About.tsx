@@ -68,7 +68,8 @@ export default function About() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">من نحن</h1>
             <p className="text-xl opacity-90">
-              تعرف على أمل عبدالله المغواري - محاسب قانوني متخصص في تقديم الاستشارات المالية والضريبية
+              تعرف على أمل عبدالله المغواري - محاسب قانوني متخصص في تقديم
+              الاستشارات المالية والضريبية
             </p>
           </div>
         </div>
@@ -84,7 +85,9 @@ export default function About() {
                 <div className="bg-background rounded-xl p-8 text-center">
                   <div className="text-7xl font-bold text-accent mb-2">أ</div>
                   <h2 className="text-2xl font-bold">أمل عبدالله المغواري</h2>
-                  <p className="text-lg text-accent font-semibold mt-2">محاسب قانوني</p>
+                  <p className="text-lg text-accent font-semibold mt-2">
+                    محاسب قانوني
+                  </p>
                 </div>
               </div>
             </div>
@@ -92,13 +95,19 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold mb-4">مرحباً بك</h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                أنا أمل عبدالله المغواري، محاسب قانوني متخصص بخبرة عميقة في مجال المحاسبة والضرائب. أعمل على تقديم خدمات محاسبية وضريبية متكاملة بأعلى مستويات الاحترافية والدقة.
+                أنا أمل عبدالله المغواري، محاسب قانوني متخصص بخبرة عميقة في مجال
+                المحاسبة والضرائب. أعمل على تقديم خدمات محاسبية وضريبية متكاملة
+                بأعلى مستويات الاحترافية والدقة.
               </p>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                منذ حصولي على درجة البكالوريوس في التجارة من جامعة دمنهور وحتى اليوم، عملت على تطوير خبراتي من خلال الدراسات العليا في المحاسبة المالية والمراجعة، مما مكنني من تقديم حلول فعالة وموثوقة لعملائي.
+                منذ حصولي على درجة البكالوريوس في التجارة من جامعة دمنهور وحتى
+                اليوم، عملت على تطوير خبراتي من خلال الدراسات العليا في المحاسبة
+                المالية والمراجعة، مما مكنني من تقديم حلول فعالة وموثوقة
+                لعملائي.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                أفخر بالعمل مع مئات العملاء من الأفراد والشركات، وتقديم خدمات تتسم بالدقة والثقة والسرية التامة.
+                أفخر بالعمل مع مئات العملاء من الأفراد والشركات، وتقديم خدمات
+                تتسم بالدقة والثقة والسرية التامة.
               </p>
             </div>
           </div>
@@ -106,7 +115,10 @@ export default function About() {
           {/* Achievements */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-16">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-secondary bg-opacity-50 rounded-lg p-6 text-center">
+              <div
+                key={index}
+                className="bg-secondary bg-opacity-50 rounded-lg p-6 text-center"
+              >
                 <div className="text-4xl font-bold text-accent mb-2">
                   {achievement.number}
                 </div>
@@ -123,7 +135,9 @@ export default function About() {
       {/* Education Section */}
       <section className="py-16 md:py-24 bg-secondary bg-opacity-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">التعليم والشهادات</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            التعليم والشهادات
+          </h2>
 
           <div className="space-y-8 max-w-3xl mx-auto">
             {education.map((item, index) => (
@@ -131,12 +145,12 @@ export default function About() {
                 key={index}
                 className="bg-card border border-border rounded-lg p-8 flex gap-6"
               >
-                <div className="text-accent flex-shrink-0">
-                  {item.icon}
-                </div>
+                <div className="text-accent flex-shrink-0">{item.icon}</div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">{item.degree}</h3>
-                  <p className="text-accent font-semibold mb-1">{item.institution}</p>
+                  <p className="text-accent font-semibold mb-1">
+                    {item.institution}
+                  </p>
                   <p className="text-muted-foreground mb-3">{item.year}</p>
                   <p className="text-foreground">{item.details}</p>
                 </div>
@@ -149,7 +163,9 @@ export default function About() {
       {/* Skills Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">المجالات المتخصصة</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            المجالات المتخصصة
+          </h2>
 
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -170,14 +186,17 @@ export default function About() {
       {/* Professional Approach */}
       <section className="py-16 md:py-24 bg-secondary bg-opacity-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">منهجي المهني</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            منهجي المهني
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-card border border-border rounded-lg p-8 text-center">
               <Briefcase className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-3">الاحترافية</h3>
               <p className="text-muted-foreground">
-                التعامل الاحترافي مع جميع الأمور المحاسبية بدقة عالية وكفاءة متميزة
+                التعامل الاحترافي مع جميع الأمور المحاسبية بدقة عالية وكفاءة
+                متميزة
               </p>
             </div>
             <div className="bg-card border border-border rounded-lg p-8 text-center">

@@ -174,7 +174,8 @@ export default function Services() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">الخدمات</h1>
             <p className="text-xl opacity-90">
-              مجموعة شاملة من الخدمات المحاسبية والضريبية المتخصصة لتلبية جميع احتياجاتك
+              مجموعة شاملة من الخدمات المحاسبية والضريبية المتخصصة لتلبية جميع
+              احتياجاتك
             </p>
           </div>
         </div>
@@ -193,11 +194,16 @@ export default function Services() {
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
+                <p className="text-muted-foreground mb-4">
+                  {service.description}
+                </p>
 
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-2 text-sm">
+                    <li
+                      key={featureIndex}
+                      className="flex items-start gap-2 text-sm"
+                    >
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 flex-shrink-0"></div>
                       <span className="text-muted-foreground">{feature}</span>
                     </li>

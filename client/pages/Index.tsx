@@ -67,7 +67,9 @@ export default function Index() {
                 محاسب قانوني متخصص
               </p>
               <p className="text-lg text-primary-foreground opacity-90 leading-relaxed">
-                متخصص في تقديم استشارات ضريبية وحسابية متكاملة بكفاءة واحترافية عالية. مع خبرة عميقة في المجال المحاسبي والضريبي، أقدم الحلول المالية الموثوقة لشركاتك وأفرادك.
+                متخصص في تقديم استشارات ضريبية وحسابية متكاملة بكفاءة واحترافية
+                عالية. مع خبرة عميقة في المجال المحاسبي والضريبي، أقدم الحلول
+                المالية الموثوقة لشركاتك وأفرادك.
               </p>
 
               {/* CTA Buttons */}
@@ -92,15 +94,21 @@ export default function Index() {
               <div className="flex gap-8 pt-8 flex-wrap">
                 <div>
                   <div className="text-3xl font-bold text-accent">100+</div>
-                  <p className="text-sm text-primary-foreground opacity-75">عميل راضٍ</p>
+                  <p className="text-sm text-primary-foreground opacity-75">
+                    عميل راضٍ
+                  </p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-accent">15+</div>
-                  <p className="text-sm text-primary-foreground opacity-75">سنة خبرة</p>
+                  <p className="text-sm text-primary-foreground opacity-75">
+                    سنة خبرة
+                  </p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-accent">24/7</div>
-                  <p className="text-sm text-primary-foreground opacity-75">دعم متاح</p>
+                  <p className="text-sm text-primary-foreground opacity-75">
+                    دعم متاح
+                  </p>
                 </div>
               </div>
             </div>
@@ -125,7 +133,9 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">خدماتنا الرئيسية</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              خدماتنا الرئيسية
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               نقدم مجموعة شاملة من الخدمات المحاسبية والضريبية المتخصصة
             </p>
@@ -163,7 +173,9 @@ export default function Index() {
       <section className="py-16 md:py-24 bg-secondary bg-opacity-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">لماذا تختارنا</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              لماذا تختارنا
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               ما يميزنا عن غيرنا في تقديم الخدمات المحاسبية والضريبية
             </p>
@@ -197,7 +209,8 @@ export default function Index() {
             هل أنت مستعد لتحسين إدارتك المالية؟
           </h2>
           <p className="text-xl text-primary-foreground opacity-90 mb-8 max-w-2xl mx-auto">
-            تواصل معنا اليوم واحصل على استشارة مجانية حول احتياجاتك المحاسبية والضريبية
+            تواصل معنا اليوم واحصل على استشارة مجانية حول احتياجاتك المحاسبية
+            والضريبية
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

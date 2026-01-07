@@ -94,7 +94,9 @@ export default function Testimonials() {
       <section className="bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">آراء العملاء</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              آراء العملاء
+            </h1>
             <p className="text-xl opacity-90">
               اطلع على تقييمات عملائنا الراضين والكلمات الطيبة التي يشاركونها
             </p>

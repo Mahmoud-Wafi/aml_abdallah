@@ -84,7 +84,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="text-sm text-muted-foreground">{service}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {service}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -121,9 +123,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>
-            &copy; {currentYear} أمل عبدالله المغواري. جميع الحقوق محفوظة.
-          </p>
+          <p>&copy; {currentYear} أمل عبدالله المغواري. جميع الحقوق محفوظة.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-accent transition-colors">
               سياسة الخصوصية

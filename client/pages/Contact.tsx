@@ -17,7 +17,7 @@ export default function Contact() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -94,14 +94,21 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-card border border-border rounded-lg p-6">
+              <div
+                key={index}
+                className="bg-card border border-border rounded-lg p-6"
+              >
                 <div className="text-accent mb-4">{info.icon}</div>
                 <h3 className="font-bold text-lg mb-2">{info.title}</h3>
                 {info.type === "link" ? (
                   <a
                     href={info.href}
                     target={info.href.startsWith("http") ? "_blank" : undefined}
-                    rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    rel={
+                      info.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="text-accent hover:underline"
                   >
                     {info.info}
@@ -118,7 +125,7 @@ export default function Contact() {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-bold mb-6">أرسل لنا رسالة</h2>
-              
+
               {isSubmitted && (
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6 text-green-800">
                   ✓ تم استلام رسالتك بنجاح! سنرد عليك في أقرب وقت.
@@ -127,7 +134,10 @@ export default function Contact() {
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium mb-2"
+                  >
                     الاسم الكامل
                   </label>
                   <input
@@ -143,7 +153,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium mb-2"
+                  >
                     البريد الإلكتروني
                   </label>
                   <input
@@ -159,7 +172,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium mb-2"
+                  >
                     رقم الهاتف
                   </label>
                   <input
@@ -175,7 +191,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium mb-2"
+                  >
                     الموضوع
                   </label>
                   <select
@@ -197,7 +216,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     الرسالة
                   </label>
                   <textarea
@@ -224,12 +246,13 @@ export default function Contact() {
             {/* Info Section */}
             <div>
               <h2 className="text-2xl font-bold mb-6">معلومات إضافية</h2>
-              
+
               <div className="bg-secondary bg-opacity-50 rounded-lg p-8 space-y-6">
                 <div>
                   <h3 className="font-bold text-lg mb-2">سرعة الاستجابة</h3>
                   <p className="text-muted-foreground">
-                    نحرص على الرد على جميع الاستفسارات في أقرب وقت ممكن، عادة في نفس اليوم.
+                    نحرص على الرد على جميع الاستفسارات في أقرب وقت ممكن، عادة في
+                    نفس اليوم.
                   </p>
                 </div>
 
@@ -248,7 +271,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg mb-2">الاستشارة الأولى</h3>
                   <p className="text-muted-foreground">
-                    الاستشارة الأولى مجانية! تحدث معنا عن احتياجاتك وسنساعدك في إيجاد الحل الأنسب.
+                    الاستشارة الأولى مجانية! تحدث معنا عن احتياجاتك وسنساعدك في
+                    إيجاد الحل الأنسب.
                   </p>
                 </div>
 
@@ -291,7 +315,9 @@ export default function Contact() {
               <Mail className="w-12 h-12 mx-auto mb-4 text-accent" />
               <h3 className="text-2xl font-bold mb-2">البريد الإلكتروني</h3>
               <p className="text-lg">amlbdallhmghwary16@gmail.com</p>
-              <p className="text-sm mt-2 text-muted-foreground">سنرد في أقرب وقت</p>
+              <p className="text-sm mt-2 text-muted-foreground">
+                سنرد في أقرب وقت
+              </p>
             </a>
           </div>
         </div>

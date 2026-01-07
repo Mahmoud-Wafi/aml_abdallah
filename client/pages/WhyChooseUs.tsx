@@ -1,7 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { CheckCircle2, Award, Users, TrendingUp, Heart, Zap } from "lucide-react";
+import {
+  CheckCircle2,
+  Award,
+  Users,
+  TrendingUp,
+  Heart,
+  Zap,
+} from "lucide-react";
 
 export default function WhyChooseUs() {
   const reasons = [
@@ -94,9 +101,12 @@ export default function WhyChooseUs() {
       <section className="bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">لماذا تختارنا</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              لماذا تختارنا
+            </h1>
             <p className="text-xl opacity-90">
-              اكتشف الأسباب التي تجعلنا الخيار الأمثل للخدمات المحاسبية والضريبية
+              اكتشف الأسباب التي تجعلنا الخيار الأمثل للخدمات المحاسبية
+              والضريبية
             </p>
           </div>
         </div>
@@ -141,7 +151,9 @@ export default function WhyChooseUs() {
               <thead>
                 <tr className="border-b-2 border-primary">
                   <th className="text-right py-4 px-4 font-bold">المعيار</th>
-                  <th className="text-center py-4 px-4 font-bold text-accent">نحن</th>
+                  <th className="text-center py-4 px-4 font-bold text-accent">
+                    نحن
+                  </th>
                   <th className="text-center py-4 px-4 font-bold text-muted-foreground">
                     الآخرون
                   </th>
