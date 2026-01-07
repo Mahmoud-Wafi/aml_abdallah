@@ -3,19 +3,5 @@
   "framework": "vite",
   "env": {
     "NODE_ENV": "production"
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/dist/server/production.mjs"
-    },
-    {
-      "src": "/dist/spa/(.*)",
-      "dest": "/dist/spa/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/spa/index.html"
-    }
-  ]
+  }
 }
