@@ -1,5 +1,18 @@
 {
+  "buildCommand": "npm run build",
+  "framework": "vite",
+  "nodejs": "22.x",
+  "env": {
+    "NODE_ENV": "production"
+  },
   "routes": [
-    { "src": "/(.*)", "dest": "/server/node-build.mjs" }
+    {
+      "src": "/api/.*",
+      "dest": "/dist/server/production.mjs"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/spa/index.html"
+    }
   ]
 }
